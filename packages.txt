@@ -1,0 +1,11 @@
+python 3.7
+
+pip:
+pyautogui
+matplotlib
+pyyaml
+
+conda:
+opencv
+ffmpeg
+openvino-ie4py=2020.3 -c intel
