@@ -24,8 +24,8 @@ set "INTEL_CVSDK_DIR=%INTEL_OPENVINO_DIR%"
 where /q libmmd.dll || echo Warning: libmmd.dll couldn't be found in %%PATH%%. Please check if the redistributable package for Intel(R) C++ Compiler is installed and the library path is added to the PATH environment variable. System reboot can be required to update the system environment.
 
 :: OpenCV
-if exist "%INTEL_OPENVINO_DIR%\opencv\setupvars.sch" (
-call "%INTEL_OPENVINO_DIR%\opencv\setupvars.sch"
+if exist "%INTEL_OPENVINO_DIR%\opencv\setupvars.sh" (
+call "%INTEL_OPENVINO_DIR%\opencv\setupvars.sh"
 ) else (
 set "OpenCV_DIR=%INTEL_OPENVINO_DIR%\opencv\x64\vc14\lib"
 set "PATH=%INTEL_OPENVINO_DIR%\opencv\x64\vc14\bin;%PATH%"
